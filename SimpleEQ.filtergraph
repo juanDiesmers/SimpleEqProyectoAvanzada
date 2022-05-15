@@ -61,10 +61,10 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <FILTER uid="5" x="0.6298076923076923" y="0.4645308924485126">
+  <FILTER uid="5" x="0.6048192771084338" y="0.6551724137931034">
     <PLUGIN name="SimpleEQ" format="VST3" category="Fx" manufacturer="yourcompany"
             version="1.0.0" file="C:\Program Files\Common Files\VST3\SimpleEQ.vst3"
-            uniqueId="efa8e824" isInstrument="0" fileTime="180c4e4295c" infoUpdateTime="180c4fc8f3c"
+            uniqueId="efa8e824" isInstrument="0" fileTime="180c4e4295c" infoUpdateTime="180c5034cc1"
             numInputs="2" numOutputs="2" isShell="0" uid="e9523bb0"/>
     <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
     <LAYOUT>
@@ -76,6 +76,24 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
+  <FILTER uid="6" x="0.4734939759036145" y="0.3770114942528736" uiLastX_Normal="2128"
+          uiLastY_Normal="227" uiopen_Normal="1">
+    <PLUGIN name="AudioFilePlayer" format="VST3" category="Fx" manufacturer="Matkat Music LLC"
+            version="1.0.0" file="C:\Program Files\Common Files\VST3\AudioFilePlayer.vst3"
+            uniqueId="79fe81c" isInstrument="0" fileTime="180c5019531" infoUpdateTime="180c5034cc2"
+            numInputs="2" numOutputs="2" isShell="0" uid="e95d02c7"/>
+    <STATE>320.VMjLgbS....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DSM13BTIISX1UEaho2ZVkUdAAkKAwDUigWRWkEcQ0VTucmUY4BQtDUQLolShUELhsVRxHlXUACUUUjZTkDNDcEQ3DyXzcWLgcVTwHlXq0FSyUjQisFM3gUcvXDRy4BZTsTVv.kYtHTU3giQh8VSVgkbAITUtUUagoVUrIFc5YjX44hKt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
   <CONNECTION srcFilter="5" srcChannel="0" dstFilter="3" dstChannel="0"/>
   <CONNECTION srcFilter="5" srcChannel="1" dstFilter="3" dstChannel="1"/>
+  <CONNECTION srcFilter="6" srcChannel="0" dstFilter="5" dstChannel="0"/>
+  <CONNECTION srcFilter="6" srcChannel="1" dstFilter="5" dstChannel="1"/>
 </FILTERGRAPH>
