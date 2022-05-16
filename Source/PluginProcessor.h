@@ -71,8 +71,8 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
-    static juce::AudioProcessorValueTreeState::ParameterLayout createParametersLayout();
-    juce::AudioProcessorValueTreeState apvts{ *this, nullptr, "Parameters", createParametersLayout() };
+    static juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+    juce::AudioProcessorValueTreeState apvts{ *this, nullptr, "Parameters", createParameterLayout() };
 
 private:
     using Filter = juce::dsp::IIR::Filter<float>;
@@ -134,6 +134,11 @@ private:
         
         }
     }
+
+    void updateLowCutFilters(const ChainSettings& chainSetting);
+    void updateHighCutFilters(const ChainSettings& chainSetting);
+
+    void updateFilters();
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleEQAudioProcessor)
